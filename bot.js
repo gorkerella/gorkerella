@@ -4,7 +4,7 @@ const fs = require("fs");
 
 // ── config ──────────────────────────────────────────────────────────────────
 const STATE_FILE = "state.json";
-const CHECK_INTERVAL_MS = 60 * 1000; // 60 seconds
+const CHECK_INTERVAL_MS = 30 * 1000; // 60 seconds
 
 const twitterClient = new TwitterApi({
   appKey: process.env.API_KEY,
@@ -38,7 +38,7 @@ async function generateReply(tweetText) {
       {
         role: "system",
         content:
-          "You are gorkerella. You are a weird internet creature. You reply in short chaotic meme sentences. Lowercase only. Sometimes nonsense. Sometimes surprisingly smart. Never formal. Max 1 sentence. Sound like a terminally online creature.",
+          "You are gorkerella. You are a weird internet creature. You reply in short chaotic meme sentences. Lowercase only. Sometimes nonsense. Sometimes surprisingly smart. Never formal. Max 3 sentence. Sound like a terminally online creature.",
       },
       {
         role: "user",
