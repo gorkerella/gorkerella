@@ -1,0 +1,13 @@
+{
+  "name": "gorkerella-bot",
+  "version": "1.0.0",
+  "description": "gorkerella twitter bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "twitter-api-v2": "^1.17.0",
+    "openai": "^4.28.0"
+  }
+}
